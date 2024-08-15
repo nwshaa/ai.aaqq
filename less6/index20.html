@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .div1{
+   width: 300px;
+   height:300px;
+   border: 2px solid;
+   position: relative;
+   }
+
+   #div2{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+   }
+</style>
+<body>
+    <!-- <div id="div"></div> -->
+    
+     <div class="div1" id="div1"> 
+        <div class="div2" id="div2"></div>
+    </div>
+   
+    <script>
+
+   //  let body = document.body
+        // //keycode
+        // btn.onclick = () => {
+        //     document.body.style.background = "yellow"
+        // }
+
+      //  body.onkeyup = (e) => {
+//onkeyup
+//onkeydown
+//onkey
+
+        //     if(e.keyCode == 32){
+        //         document.body.style.background = "blue"
+        //     }
+        // }
+       
+    //     let  body = document.body
+    //     body.onkeydown = (e) =>{
+    //     if(e.keyCode == 32){
+    //     div.innerHTML = `<h1>Hello</h1>`
+    //     }
+    // }
+
+
+        // let p = 1
+        // let  body = document.body
+        // body.onkeydown = (e) =>{
+        // p++
+        // if(e.keyCode == 32){
+        // div.innerHTML = p
+        // }
+        // }
+
+        
+        let  body = document.body
+        let left1 = 0
+        let top1= 0
+
+        body.onkeydown = (e) =>{
+            if(e.keyCode == 39){
+            left1 += 10
+            div2.style.left = left1 + "px"
+            }
+            if(e.keyCode == 37){
+            left1 -= 10
+            div2.style.left = left1 + "px"
+            }
+            if(e.keyCode == 40){
+            top1 += 10
+            div2.style.top = top1+ "px"
+            }
+            if(e.keyCode == 38){
+            top1 -= 10
+            div2.style.top = top1 + "px"
+            }
+        }
+
+    </script>
+</body>
+</html>

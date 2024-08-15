@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <!-- <style>
+    .div1{
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+    }
+    img{
+        width: 200px;
+        height: 300px;
+        background-size: cover;
+    }
+    #box{
+        display: flex;
+    }
+ </style> -->
+
+    <style>
+    .div{
+        display: flex;
+        width: 300%;
+        height: 300px;
+        background-color: yellow;
+    }
+    img{
+       width: 300px;
+       height: 300px;
+       border-radius: 30px;
+       background-size: cover;
+       background-color: darkslategrey;
+       border: 1px solid;
+    }
+    .div1{
+        width: 500%;
+        height: 250px;
+        background-color: red;
+        border: 1px solid;
+        position: relative;
+        top: 500px;
+    }
+    #box{
+       display: flex;
+
+    }
+ </style> 
+<body>
+    <div class="div">
+    <div class="div1"></div>
+    </div>
+    <div id="box"></div> 
+    <!-- <script>
+        let mass = [
+            {name:"Doni", age:"20",img:"https://ekaraganda.kz/foto/322_6a634022070e9e2e9681617932b2dcd4.jpg"},
+            {name:"Alex", age:"32",img:"https://i.pinimg.com/236x/6f/34/9e/6f349edd5aecc4340b53cfacfadc90ce.jpg"},
+            {name:"Alina", age:"19",img:"https://i.pinimg.com/736x/6b/a0/92/6ba092f9b81bb116dd3a1417e09f7c66.jpg"}
+        ]
+        let div = document.getElementById("box")
+        for(let i = 0; i < mass.length;i++){
+            div.innerHTML +=`
+            <div class="div1">
+                <img src="${mass[i].img}" alt="err"/>
+                <h3>${mass[i]}<h3/>
+                    <p>${mass[i].age}</p>
+                    </div>
+            `
+        }
+
+    </script> -->
+    <script>
+      let p =  [
+            {img:"https://thumb.tildacdn.com/tild3733-6437-4133-b462-313838633835/-/resize/312x/-/format/webp/pizza7.jpg"
+            ,name:"Пицца с тунцом",
+            sos:"Тунец, помидоры, красный лук, оливки, сыр Моцарелла, пицца-соус."
+            ,price:"от 920 сом"
+            ,button:"заказать"},
+            {
+                img:"https://thumb.tildacdn.com/tild3436-6535-4233-b262-333961303062/-/resize/312x/-/format/webp/pizza3.jpg"
+                ,name:"Пицца пепперони"
+                ,sos:"Пепперони, двойной сыр Моцарелла, пицца-соус."
+                ,price:"от 860 сом"
+                ,button:"заказать"
+            },
+            {
+                img:"https://thumb.tildacdn.com/tild3664-3437-4663-a661-623034656637/-/resize/312x/-/format/webp/pizza4.jpg"
+                ,name:"Гавайская Пицца"
+                ,sos:"Ветчина, ананас, сыр Моцарелла, пицца-соус."
+                ,price:"от 720 сом"
+                ,button:"заказать"
+            },
+            {
+                img:"https://thumb.tildacdn.com/tild6163-3262-4539-a663-643034396164/-/resize/312x/-/format/webp/pizza8.jpg"
+                ,name:"диабло Пицца"
+                ,sos:"Ветчина, шампиньоны, Пепперони, острые перчики Халапеньо, орегано, базилик, сыр Моцарелла, пицца-соус."
+                ,price:"от 920 сом"
+                ,button:"заказать"
+            },
+            {
+                img:"https://mf48.ru/images/frontend_images/products/1680695766%D1%88%D0%B0%D1%83%D1%80%D0%BC%D0%B0-2.jpg"
+                ,name:"шаурма с халапельно"
+                ,sos:"лаваш,окорочок куриный,пекинская капуста,соус для шаурмы-310гр."
+                ,price:"от 280 сом"
+                ,button:"заказать"
+            },
+            {
+                img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjdGmq5zO2SSx4QKKCE5AmKlae-TeCxR9liw&usqp=CAU"
+                ,name:"Шаурма"
+                ,sos:"шаурма+колла+фри три в одном"
+                ,price:"от 480 сом"
+                ,button:"заказать"
+            },
+            {
+                img:"https://e1.edimdoma.ru/data/recipes/0014/2127/142127-ed4_wide.jpg?1628761607"
+                ,name:"кортофель"
+                ,sos:"Картофель по-деревенски - заказать картофель по-деревенски с доставкой в твери"
+                ,price:"от 100 сом"
+                ,button:"заказать"
+            },
+            {
+                img:"https://pbs.twimg.com/media/EgKD4IwXkAAGwzB.png"
+                ,name:"Бургеры"
+                ,sos:"KFS кыргызстане доставка бесплатнно"
+                ,price:"от 300 сом"
+                ,button:"заказать"
+            },
+            {
+                img:"https://api.bulmag.org/images/0f928d99077d565009d04ee330f5644c.jPG"
+                ,name:"Грил"
+                ,sos:"ПИЛЕ, МАРИНАТА ( АНТИОКСИДАНТ Е331, Е316, ДЕКСТРОЗА"
+                ,price:"от 500 сом"
+                ,button:"заказать"
+            },
+            {
+                img:"https://24tort.ru/img/_RER6584-min.jpg"
+                ,name:"торт"
+                ,sos:"на дисерт"
+                ,price:"от 100 сом"
+                ,button:"заказать"
+            }
+        ]
+        let div = document.getElementById("box")
+        for(let i = 0; i < p.length;i++){
+            div.innerHTML +=`
+            <div class="div1">
+                <img src="${p[i].img}" alt="err"/>
+                <h3>${p[i].name}<h3/>
+                <h3>${p[i].sos}<h3/>
+                <h3>${p[i].price}<h3/>
+                    </div>
+            `
+        }
+        
+
+    </script>
+</body>
+</html>

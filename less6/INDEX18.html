@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    #div{
+        width: 150px;
+        height: 350px;
+        background-color: black;
+    }
+    #div1{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        border-radius: 50%;
+        border: 1px solid red;
+        position: relative;
+        bottom: 340px;
+        left: 25px;
+    }
+    #div2{
+        width: 100px;
+        height: 100px;
+        background-color:yellow;
+        border-radius: 50%;
+        border: 1px solid red;
+        position: relative;
+        bottom: 330px;
+        left: 25px;
+    }
+    #div3{
+        width: 100px;
+        height: 100px;
+        background-color:rgb(9, 246, 9);
+        border-radius: 50%;
+        border: 1px solid red;
+        position: relative;
+        bottom: 320px;
+        left: 25px;
+    }
+    #div4{
+        font-size: 50px;
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+
+</style>
+<body>
+    <h1>Hello BESOFT TEACH</h1>
+    <div id="div"></div>
+    <div id="div1"></div>
+    <div id="div2">
+        <div id="div4">15</div>
+    </div>
+    <div id="div3"></div>
+    
+    
+ <script>
+    let a = 15
+    function color(){
+        div1.style.background = div1.style.background == "red" ? "black" : "red"
+        div3.style.background = div3.style.background == "black" ? "green":"black"
+    }
+    function name () {
+    div4.innerHTML = a
+    a--
+    if(a < 0){
+     a = 15
+     color()
+     
+     
+    }
+    }
+    setInterval(name,500)
+
+
+
+
+
+
+
+
+
+ </script>
+</body>
+</html>

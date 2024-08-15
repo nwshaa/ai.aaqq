@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div1{
+    width: 300px;
+    height:300px;
+    border: 2px solid red;
+    position: relative;
+    overflow: hidden;
+    
+    }
+ 
+    #div2{
+     width: 50px;
+     height: 50px;
+     background-color: rgb(49, 41, 153);
+     position: absolute;
+     
+    }
+ </style>
+<body>
+    <div class="div1" id="div1"> 
+        <div class="div2" id="div2"></div>
+    </div>
+
+    <script>
+
+        let  body = document.body
+        let left1 = 0
+        let top1= 0
+        let current=0
+     
+        body.onkeydown = (e) =>{
+             current= e.keyCode
+        }
+    
+            setInterval(()=>{
+
+            if(current == 39){
+            left1 += 10
+            div2.style.left = left1 + "px"
+            div2.style.left =  div2.style.left == left1 ?top1:left1
+            }
+            
+            if(current == 37){
+            left1 -= 10
+            div2.style.left = left1 + "px"
+            }
+            if(current == 40){
+            top1 += 10
+            div2.style.top = top1+ "px"
+            }
+            if(current == 38){
+            top1 -= 10
+            div2.style.top = top1 + "px"
+            }
+     
+           if(left1==300){
+            left1=0
+           }else if(top1 ==300){
+             top1=0
+           }else if(left1==0){
+             left1=300
+           }else if(top1==0){
+             top1=300
+           }
+           },50)
+
+    </script>
+</body>
+</html>

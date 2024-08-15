@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        #div{
+        width: 150px;
+        height: 350px;
+        background-color: black;
+    }
+    #div1{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        border-radius: 50%;
+        border: 1px solid red;
+        position: relative;
+        bottom: 340px;
+        left: 25px;
+    }
+    #div2{
+        width: 100px;
+        height: 100px;
+        background-color:yellow;
+        border-radius: 50%;
+        border: 1px solid red;
+        position: relative;
+        bottom: 330px;
+        left: 25px;
+    }
+    #div3{
+        width: 100px;
+        height: 100px;
+        background-color:rgb(9, 246, 9);
+        border-radius: 50%;
+        border: 1px solid red;
+        position: relative;
+        bottom: 320px;
+        left: 25px;
+    }
+    #div4{
+        font-size: 50px;
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    #div5{
+        width: 150px;
+        height: 350px;
+        background-color: black;
+        position: relative;
+        bottom: 655px;
+        left: 20%;
+    }
+    #div6{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        border-radius: 50%;
+        border: 1px solid red;
+        position: relative;
+        bottom: 990px;
+        left: 22%;
+    }
+    #div7{
+        width: 100px;
+        height: 100px;
+        background-color:yellow;
+        border-radius: 50%;
+        border: 1px solid red;
+        position: relative;
+        bottom: 985px;
+        left: 22%;
+    }
+    #div8{
+        width: 100px;
+        height: 100px;
+        background-color:rgb(9, 246, 9);
+        border-radius: 50%;
+        border: 1px solid red;
+        position: relative;
+        bottom: 980px;
+        left: 22%;
+    }
+    #div9{
+        font-size: 50px;
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+
+
+</style>
+<body>
+    <div id="div"></div>
+    <div id="div1"></div>
+    <div id="div2">
+        <div id="div4">15</div>
+    </div>
+    <div id="div3"></div>
+    
+    <div id="div5"></div>
+    <div id="div6"></div>
+    <div id="div7">
+        <div id="div9">15</div>
+    </div>
+    <div id="div8"></div>
+
+<script>
+    let a = 15
+    
+      
+        function ane (){
+            if(a <  5){
+            div2.style.background = div2.style.background == "black" ? "yellow" : "black" 
+            div2.style.color = "yellow"
+             }
+        }  
+        
+    
+
+    setInterval(ane,200)
+
+
+    function color(){
+        div1.style.background = div1.style.background == "red" ? "black" : "red"
+        div3.style.background = div3.style.background == "black" ? "green":"black"
+    }
+    function name () {
+    div4.innerHTML = a
+    a--
+    if(a < 0){
+     a = 15
+     color()
+     
+     
+    }
+    }
+    setInterval(name,500)
+
+
+    let b = 15
+    function age(){
+        div6.style.background = div5.style.background == "red" ? "black" : "red"
+        div8.style.background = div8.style.background == "black" ? "green":"black"
+    }
+    function nane () {
+    div9.innerHTML = b
+    b--
+    if(b < 0){
+     b = 15
+     age()
+     
+     
+    }
+    }
+    setInterval(nane,500)
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

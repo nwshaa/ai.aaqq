@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<body>
+    <h3 id="h3">Todo list 0</h3>
+    <input type="text" name="" id="inp">
+    <button id="btn">Добавить</button>
+    <ul id="ul"></ul>
+
+    <script>
+
+    btn.onclick = () =>{
+    if(inp.value == " "){
+       confirm("бирнерсе жаз")
+    }else{
+        let n = 1
+        ul.innerHTML += `<li>${inp.value}</li>`
+        inp.value = ""
+        h3.innerHTML =`Todo list ${n++}`
+        }
+    }
+      //confirm("")
+      
+
+    </script>
+</body>
+</html>
